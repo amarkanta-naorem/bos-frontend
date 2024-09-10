@@ -10,17 +10,17 @@ const MainContainer = () => {
       <hr className="my-4" />
       <div className="flex flex-row justify-between items-center px-10">
         <div className="flex justify-between items-center w-1/5">
-          <div>
+          <button className="border border-teal-800 py-2 px-4 mx-2 text-teal-800 font-bold rounded inline-flex items-center">
+            Filter
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
-              height="25px"
-              fill="#042f2e"
-              className="cursor-pointer"
+              fill="#115e59"
+              className="w-4 h-4 ml-2"
             >
-              <path d="M3.9 54.9C10.5 40.9 24.5 32 40 32l432 0c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9 320 448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6l0-79.1L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z" />
+              <path d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z" />
             </svg>
-          </div>
+          </button>
           <div className="relative ml-10">
             <input
               type="search"
@@ -45,7 +45,7 @@ const MainContainer = () => {
             Excel
           </button>
           <button className="border border-[#F40F02] py-2 px-4 mx-2 text-[#F40F02] font-bold rounded">
-            PDF
+            Pdf
           </button>
           <button className="border border-teal-800 py-2 px-4 mx-2 text-teal-800 font-bold rounded inline-flex items-center">
             <svg
@@ -61,11 +61,11 @@ const MainContainer = () => {
           <button className="border border-teal-950 py-2 px-4 mx-2 text-teal-950 font-bold rounded inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              fill="#042f2e"
+              viewBox="0 0 512 512"
+              fill="#115e59"
               className="w-4 h-4 me-2"
             >
-              <path d="M64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320c0-8.8-7.2-16-16-16L64 80zM0 96C0 60.7 28.7 32 64 32l320 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM200 344l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+              <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
             </svg>
             Create Course
           </button>
@@ -192,8 +192,8 @@ const MainContainer = () => {
           <span className="font-bold italic"> Amarkanta Naorem</span>
         </p>
         <p className="text-sx text-white">
-          <span className="font-bold italic">BeOnSchool</span> - Made with 💖 in 
-          <span className="font-bold"> Manipur</span>
+          <span className="font-bold italic">BeOnSchool</span> - Made with 💖 in
+          <span className="font-bold"> Kangleipak</span>
         </p>
       </div>
     </div>
