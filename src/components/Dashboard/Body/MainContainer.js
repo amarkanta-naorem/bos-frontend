@@ -184,7 +184,7 @@ const MainContainer = () => {
         </table>
       </div>
 
-      <div className="fixed bottom-0 w-[83.1rem] flex justify-between bg-teal-950 px-10 py-1">
+      <div className="fixed bottom-0 w-[86.5rem] flex justify-between bg-teal-950 px-10 py-1">
         <p className="text-sx text-white">
           &copy;
           <span className="font-bold italic"> BeOnSchool</span> is proudly owned

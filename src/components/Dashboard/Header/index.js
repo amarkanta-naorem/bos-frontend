@@ -1,6 +1,12 @@
 import React from "react";
+import { sidebarToggleMenu } from "../../../utils/redux/Slicer/DashboardSlice";
+import { useDispatch } from "react-redux";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const sidebarToggleMenuHandler = () => {
+    dispatch(sidebarToggleMenu());
+  };
   return (
     <nav className="w-full h-[14vh] flex justify-between items-center py-9 px-5 shadow">
       <div className="flex items-center">
@@ -15,6 +21,7 @@ const Header = () => {
           height="25px"
           fill="#042f2e"
           className="cursor-pointer"
+          onClick={() => sidebarToggleMenuHandler()}
         >
           <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
         </svg>
@@ -51,8 +58,10 @@ const Header = () => {
               className="w-11 h-11 rounded-md"
             />
             <div className="flex flex-col px-2">
-                <p className="text-lg font-extrabold text-teal-950">Amarkanta Naorem</p>
-                <span className="text-xs text-gray-400 font-bold">Admin</span>
+              <p className="text-lg font-extrabold text-teal-950">
+                Amarkanta Naorem
+              </p>
+              <span className="text-xs text-gray-400 font-bold">Admin</span>
             </div>
           </li>
           <li className="mx-3 cursor-pointer">

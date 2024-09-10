@@ -1,7 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Sidebar = () => {
-  return (
+  const menuOpen = useSelector((store) => store.dashboard.isMenuOpen)
+  return !menuOpen ? null : (
     <div className="w-[13.5rem] h-[86vh] bg-teal-950 overflow-y-scroll no-scrollbar">
       <div className="flex justify-center">
         <ul className="my-2">
