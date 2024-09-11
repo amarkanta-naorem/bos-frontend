@@ -2,9 +2,9 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const Sidebar = () => {
-  const menuOpen = useSelector((store) => store.dashboard.isMenuOpen)
-  return !menuOpen ? null : (
-    <div className="w-[13.5rem] h-[86vh] bg-teal-950 overflow-y-scroll no-scrollbar">
+  const menuOpen = useSelector((store) => store.dashboard.isMenuOpen);
+  return menuOpen && (
+    <div className="w-[13rem] md:w-[13.5rem] h-[86vh] absolute md:static z-10 md:z-0 bg-teal-950 overflow-y-scroll no-scrollbar">
       <div className="flex justify-center">
         <ul className="my-2">
           <li className="flex flex-col items-center justify-center cursor-pointer bg-teal-900 hover:bg-teal-600 text-neutral-300 p-5 mx-4 my-7 rounded-md">
