@@ -99,8 +99,8 @@ const Sidebar = () => {
             </li>
           </ul>
         </div>
-        <div className="px-2 my-3 text-center">
-          &copy; <span className="font-serif italic">BeOnSchool</span> is proudly owned by <span className="font-serif italic">Amarkanta</span>
+        <div className="px-5 my-3 text-center text-sm">
+          &copy; <span className="font-serif italic">BeOnSchool</span> is proudly owned by <span className="font-serif italic">Amarkanta Naorem</span>
         </div>
       </div>
     )
