@@ -1,18 +1,19 @@
-import React from 'react';
-import Header from './components/Dashboard/Header';
-import Body from './components/Dashboard/Body';
-import { Provider } from 'react-redux';
-import Store from './utils/redux/Store';
+import React, { Fragment } from "react";
+import Header from "./components/Dashboard/Header";
+import Body from "./components/Dashboard/Body";
+import { Provider } from "react-redux";
+import Store from "./utils/redux/Store";
+import { Outlet } from "react-router";
 
 const App = () => {
   return (
-    <div>
+    <Fragment>
       <Provider store={Store}>
-      <Header />
-      <Body />
-    </Provider>
-    </div>
+        <Header />
+        <Outlet />
+      </Provider>
+    </Fragment>
   );
-}
+};
 
 export default App;
