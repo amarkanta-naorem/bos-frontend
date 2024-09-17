@@ -36,7 +36,7 @@ const ButtonLists = () => {
           </div>
         </div>
         <div className="flex flex-wrap md:flex-row justify-between items-center m-auto mt-4 md:m-0 md:w-2/5">
-          <button className="border border-[#1D6F42] py-1 md:py-2 px-2 md:px-4 text-[#1D6F42] font-bold rounded inline-flex items-center">
+          <button className="border border-[#1D6F42] py-1 md:py-2 px-2 md:px-4 mx-2 text-[#1D6F42] font-bold rounded inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 384 512"
@@ -47,7 +47,7 @@ const ButtonLists = () => {
             </svg>
             Excel
           </button>
-          <button className="border border-[#F40F02] py-1 md:py-2 px-2 md:px-4 text-[#F40F02] font-bold rounded inline-flex items-center">
+          <button className="border border-[#F40F02] py-1 md:py-2 px-2 md:px-4 mx-2 text-[#F40F02] font-bold rounded inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -58,7 +58,7 @@ const ButtonLists = () => {
             </svg>
             PDF
           </button>
-          <button className="border border-teal-800 py-1 md:py-2 px-2 md:px-4 text-teal-800 font-bold rounded inline-flex items-center">
+          <button className="border border-teal-800 py-1 md:py-2 px-2 md:px-4 mx-2 text-teal-800 font-bold rounded inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -69,7 +69,7 @@ const ButtonLists = () => {
             </svg>
             Import
           </button>
-          <button className="border border-teal-950 py-1 md:py-2 px-2 md:px-4 my-2 md:my-0 text-teal-950 font-bold rounded inline-flex items-center">
+          <button className="border border-teal-950 py-1 md:py-2 px-2 md:px-4 mx-2 my-2 md:my-0 text-teal-950 font-bold rounded inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"

@@ -9,7 +9,7 @@ const Sidebar = () => {
         <div className="flex justify-center">
           <ul className="my-2">
             <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
-              <div class="relative z-10 flex flex-col items-center justify-center">
+              <div className="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -20,11 +20,11 @@ const Sidebar = () => {
                 </svg>
                 Dashboard
               </div>
-              <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
+              <div className="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
             <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
-              <div class="relative z-10 flex flex-col items-center justify-center">
+              <div className="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
@@ -35,11 +35,11 @@ const Sidebar = () => {
                 </svg>
                 Courses
               </div>
-              <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
+              <div className="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
             <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
-              <div class="relative z-10 flex flex-col items-center justify-center">
+              <div className="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -50,11 +50,11 @@ const Sidebar = () => {
                 </svg>
                 Adjustments
               </div>
-              <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
+              <div className="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
             <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
-              <div class="relative z-10 flex flex-col items-center justify-center">
+              <div className="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
@@ -65,11 +65,11 @@ const Sidebar = () => {
                 </svg>
                 Transfer
               </div>
-              <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
+              <div className="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
             <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
-              <div class="relative z-10 flex flex-col items-center justify-center">
+              <div className="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -80,11 +80,11 @@ const Sidebar = () => {
                 </svg>
                 Expenses
               </div>
-              <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
+              <div className="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
             <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
-              <div class="relative z-10 flex flex-col items-center justify-center">
+              <div className="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
@@ -95,7 +95,7 @@ const Sidebar = () => {
                 </svg>
                 Purchases
               </div>
-              <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
+              <div className="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
           </ul>
         </div>
