@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonLists from "./buttonLists";
+import ButtonLists from "./Buttons/buttonLists";
 import Table from "./table";
 import MenuList from "./menuList";
 
