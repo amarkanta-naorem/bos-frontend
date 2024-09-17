@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import Body from '../components/Dashboard/Body';
 import Course from '../components/Dashboard/Body/Courses';
-import Dashboard from '../components/Dashboard/Dashboard';
+import Dashboard from '../components/Dashboard/Body/Dashboard/dashboard';
 
 const WebRouter = createBrowserRouter([
     {

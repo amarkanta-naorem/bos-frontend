@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ButtonLists from "./Buttons/buttonLists";
-import Table from "./table";
 import MenuList from "./menuList";
+import DataTable from "./Table/table";
 
 const Course = () => {
+  const [courses, setCourse] = useState([]);
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const getData = async () => {
+    const data = await fetch("https://namastedev.com/api/v1/courses");
+    const json = await data.json();
+    setCourse(json.data.courses);
+  };
+
   return (
     <div className="w-[86.5rem] md:w-full h-[86vh] overflow-x-scroll no-scrollbar bg-stone-100">
       <MenuList />
@@ -14,8 +25,8 @@ const Course = () => {
         </p>
       </div>
       <hr className="w-11/12 h-1 mx-auto my-3" />
-      <ButtonLists />
-      <Table />
+      <ButtonLists courses={courses} />
+      <DataTable courses={courses} />
     </div>
   );
 };
