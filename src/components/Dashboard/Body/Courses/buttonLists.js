@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 const ButtonLists = () => {
   return (
     <Fragment>
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center px-3 md:px-10">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center px-5 md:px-10">
         <div className="flex justify-between items-center mb-3 md:mb-0 md:w-1/5">
           <button className="border border-teal-800 py-2 px-2 md:px-4 mx-2 text-teal-800 font-bold rounded inline-flex items-center">
             Filter
@@ -19,10 +19,10 @@ const ButtonLists = () => {
           <div className="relative ml-10">
             <input
               type="search"
-              className="w-[13.2rem] md:w-96 p-2 py-3 rounded-lg bg-white outline-none"
+              className="w-[13.2rem] md:w-96 p-2 py-2 rounded-lg bg-gray-100 border outline-none"
               placeholder="Search..."
             />
-            <button className="absolute end-2 top-3.5">
+            <button className="absolute end-3 top-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -36,7 +36,7 @@ const ButtonLists = () => {
           </div>
         </div>
         <div className="flex flex-wrap md:flex-row justify-between items-center m-auto mt-4 md:m-0 md:w-2/5">
-          <button className="border border-[#1D6F42] py-1 md:py-2 px-2 md:px-4 mx-2 text-[#1D6F42] font-bold rounded inline-flex items-center">
+          <button className="border border-[#1D6F42] py-1 md:py-2 px-2 md:px-4 text-[#1D6F42] font-bold rounded inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 384 512"
@@ -47,7 +47,7 @@ const ButtonLists = () => {
             </svg>
             Excel
           </button>
-          <button className="border border-[#F40F02] py-1 md:py-2 px-2 md:px-4 mx-2 text-[#F40F02] font-bold rounded inline-flex items-center">
+          <button className="border border-[#F40F02] py-1 md:py-2 px-2 md:px-4 text-[#F40F02] font-bold rounded inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -58,7 +58,7 @@ const ButtonLists = () => {
             </svg>
             PDF
           </button>
-          <button className="border border-teal-800 py-1 md:py-2 px-2 md:px-4 mx-2 text-teal-800 font-bold rounded inline-flex items-center">
+          <button className="border border-teal-800 py-1 md:py-2 px-2 md:px-4 text-teal-800 font-bold rounded inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -69,7 +69,7 @@ const ButtonLists = () => {
             </svg>
             Import
           </button>
-          <button className="border border-teal-950 py-1 md:py-2 px-2 md:px-4 mx-2 my-2 md:my-0 text-teal-950 font-bold rounded inline-flex items-center">
+          <button className="border border-teal-950 py-1 md:py-2 px-2 md:px-4 my-2 md:my-0 text-teal-950 font-bold rounded inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"

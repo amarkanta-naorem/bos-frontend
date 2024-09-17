@@ -8,7 +8,7 @@ const Sidebar = () => {
       <div className="w-[13rem] md:w-[13.5rem] h-[86vh] absolute md:static z-10 md:z-0 bg-stone-200 overflow-y-scroll no-scrollbar">
         <div className="flex justify-center">
           <ul className="my-2">
-            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-medium transition-colors duration-1000 group">
+            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
               <div class="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ const Sidebar = () => {
               <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
-            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-medium transition-colors duration-1000 group">
+            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
               <div class="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ const Sidebar = () => {
               <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
-            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-medium transition-colors duration-1000 group">
+            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
               <div class="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Sidebar = () => {
               <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
-            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-medium transition-colors duration-1000 group">
+            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
               <div class="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const Sidebar = () => {
               <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
-            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-medium transition-colors duration-1000 group">
+            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
               <div class="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ const Sidebar = () => {
               <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
-            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-medium transition-colors duration-1000 group">
+            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
               <div class="relative z-10 flex flex-col items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,6 +98,9 @@ const Sidebar = () => {
               <div class="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
           </ul>
+        </div>
+        <div className="px-2 my-3 text-center">
+          &copy; <span className="font-serif italic">BeOnSchool</span> is proudly owned by <span className="font-serif italic">Amarkanta</span>
         </div>
       </div>
     )
