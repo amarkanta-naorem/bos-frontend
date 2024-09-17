@@ -10,20 +10,20 @@ const MenuList = () => {
       <ul className="flex flex-wrap">
         <li
           className={`relative overflow-hidden cursor-pointer mx-2 px-2 py-1 rounded-md font-thin transition-colors duration-1000 group mb-2
-          ${isActive("/") ? "bg-stone-200" : "border"}
+          ${isActive("/system/dashboard") ? "bg-stone-200" : "border"}
           `}
         >
-          <Link to={"/dashboard"}>
+          <Link to={"/system/dashboard"}>
             <div className="md:relative z-10">Dashboard</div>
             <div className="absolute inset-0 bg-stone-200 transition-transform duration-1000 transform -translate-x-full group-hover:translate-x-0"></div>
           </Link>
         </li>
         <li
           className={`relative overflow-hidden cursor-pointer mx-2 px-2 py-1 rounded-md font-thin transition-colors duration-1000 group mb-2
-          ${isActive("/course") ? "bg-stone-200" : "border"}
+          ${isActive("/system/course") ? "bg-stone-200" : "border"}
           `}
         >
-          <Link to={"/course"}>
+          <Link to={"/system/course"}>
             <div className="md:relative z-10">Courses</div>
             <div className="absolute inset-0 bg-stone-200 transition-transform duration-1000 transform -translate-x-full group-hover:translate-x-0"></div>
           </Link>

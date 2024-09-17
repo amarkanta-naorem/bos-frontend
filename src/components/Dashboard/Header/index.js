@@ -1,6 +1,7 @@
 import React from "react";
 import { sidebarToggleMenu } from "../../../utils/redux/Slicer/DashboardSlice";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -10,11 +11,13 @@ const Header = () => {
   return (
     <nav className="w-full md:h-[13vh] flex flex-col md:flex-row justify-between mb-1 items-start md:items-center md:py-9 md:px-5">
       <div className="w-full md:w-auto p-5 flex flex-row justify-between items-center">
-        <img
-          src="https://i.postimg.cc/nVkPgV71/Be-On-School1.png"
-          alt="Be-On-School"
-          className="h-7 pr-7"
-        />
+        <Link to={"/"}>
+          <img
+            src="https://i.postimg.cc/nVkPgV71/Be-On-School1.png"
+            alt="Be-On-School"
+            className="h-7 pr-7"
+          />
+        </Link>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"

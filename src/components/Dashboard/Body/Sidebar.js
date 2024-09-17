@@ -6,7 +6,8 @@ const Sidebar = () => {
   const menuOpen = useSelector((store) => store.dashboard.isMenuOpen);
   const location = useLocation();
 
-  const isActive = (path) => location.pathname === path || location.pathname.startsWith(path);
+  const isActive = (path) =>
+    location.pathname === path || location.pathname.startsWith(path);
   return (
     menuOpen && (
       <div className="w-[13rem] md:w-[13.5rem] h-[86vh] absolute md:static z-50 md:z-0 bg-stone-200 overflow-y-scroll no-scrollbar">
@@ -14,10 +15,10 @@ const Sidebar = () => {
           <ul className="my-2">
             <li
               className={`relative overflow-hidden cursor-pointer p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group
-              ${isActive("/dashboard") ? "bg-stone-300" : "bg-gray-100"}
+              ${isActive("/system/dashboard") ? "bg-stone-300" : "bg-gray-100"}
               `}
             >
-              <Link to={"dashboard"}>
+              <Link to={"/system/dashboard"}>
                 <div className="relative z-10 flex flex-col items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -35,10 +36,10 @@ const Sidebar = () => {
 
             <li
               className={`relative overflow-hidden cursor-pointer p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group
-              ${isActive("/course") ? "bg-stone-300" : "bg-gray-100"}
+              ${isActive("/system/course") ? "bg-stone-300" : "bg-gray-100"}
               `}
             >
-              <Link to={"course"}>
+              <Link to={"/system/course"}>
                 <div className="relative z-10 flex flex-col items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
