@@ -1,9 +1,8 @@
 import React, { Fragment } from "react";
-import Header from "./components/Dashboard/Header";
-import Body from "./components/Dashboard/Body";
+import { Outlet } from "react-router";
 import { Provider } from "react-redux";
 import Store from "./utils/redux/Store";
-import { Outlet } from "react-router";
+import Header from "./components/Dashboard/Header";
 
 const App = () => {
   return (

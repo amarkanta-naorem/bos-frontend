@@ -1,16 +1,23 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
   const menuOpen = useSelector((store) => store.dashboard.isMenuOpen);
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path || location.pathname.startsWith(path);
   return (
     menuOpen && (
       <div className="w-[13rem] md:w-[13.5rem] h-[86vh] absolute md:static z-50 md:z-0 bg-stone-200 overflow-y-scroll no-scrollbar">
         <div className="flex justify-center">
           <ul className="my-2">
-            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
-              <Link to={"/"}>
+            <li
+              className={`relative overflow-hidden cursor-pointer p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group
+              ${isActive("/dashboard") ? "bg-stone-300" : "bg-gray-100"}
+              `}
+            >
+              <Link to={"dashboard"}>
                 <div className="relative z-10 flex flex-col items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -22,11 +29,15 @@ const Sidebar = () => {
                   </svg>
                   Dashboard
                 </div>
+                <div className="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
               </Link>
-              <div className="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
-            <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">
+            <li
+              className={`relative overflow-hidden cursor-pointer p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group
+              ${isActive("/course") ? "bg-stone-300" : "bg-gray-100"}
+              `}
+            >
               <Link to={"course"}>
                 <div className="relative z-10 flex flex-col items-center justify-center">
                   <svg
@@ -39,8 +50,8 @@ const Sidebar = () => {
                   </svg>
                   Courses
                 </div>
+                <div className="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
               </Link>
-              <div className="absolute inset-0 bg-stone-300 transition-transform duration-1000 transform -translate-y-full group-hover:translate-y-0"></div>
             </li>
 
             <li className="relative overflow-hidden cursor-pointer bg-gray-100 p-5 mx-4 my-7 rounded-md font-thin transition-colors duration-1000 group">

@@ -14,7 +14,7 @@ const WebRouter = createBrowserRouter([
                 element: <Body />,
                 children: [
                     {
-                        path: '/',
+                        path: 'dashboard',
                         element: <Dashboard />
                     },
                     {
