@@ -24,6 +24,12 @@ const TableDataRow = ({ courses, selectCourses, handleCheckbox }) => {
             {course.short_description}
           </td>
           <td className="px-3 py-3 md:px-6 md:py-6">
+            {course.enrollments_count}
+          </td>
+          <td className="px-3 py-3 md:px-6 md:py-6">
+            {course.instructor.first_name  + " "  + course.instructor.last_name}
+          </td>
+          <td className="px-3 py-3 md:px-6 md:py-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
