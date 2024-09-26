@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 const SystemSignUp = () => {
   const [first_name, setFirstName] = useState("");
@@ -6,35 +7,35 @@ const SystemSignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [password_confirmation, setPasswordConfirmation] = useState("");
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const formData = {
-      first_name,
-      last_name,
-      email,
-      password,
-      password_confirmation,
-    };
-
+    setError(null);
     try {
       const response = await fetch("http://127.0.0.1:8000/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          first_name,
+          last_name,
+          email,
+          password,
+          password_confirmation,
+        }),
       });
-      if (response.ok) {
-        const data = await response.json();
-        console.log("Success", data);
+      const data = await response.json();
+      if (response.status === 201) {
+        navigate("/auth/system/login");
       } else {
-        console.warn("failed", response.status);
+        setError(data.message);
       }
-    } catch (error) {
-      console.error("Error catch", error);
+    } catch (err) {
+      setError("An error occured. Please try again.");
     }
   };
   return (
-    <form onSubmit={handleSubmit} className="h-[18rem]">
+    <form onSubmit={handleSubmit} className="h-auto">
       <div className="flex justify-between">
         <div className="flex flex-col items-start my-2">
           <label
@@ -119,6 +120,7 @@ const SystemSignUp = () => {
           />
         </div>
       </div>
+      {error && <p className="text-red-500 text-sm my-2">{error}</p>}
       <button className="bg-indigo-600 rounded-md px-3 py-2 my-2 text-white w-full text-sm font-semibold hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
         Sign Up
       </button>
