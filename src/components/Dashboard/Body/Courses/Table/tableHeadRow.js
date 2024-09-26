@@ -19,13 +19,13 @@ const TableHeadRow = ({
           />
         </th>
         <th scope="col" className="px-3 py-3 md:px-6 md:py-6">
+          Thumbnail
+        </th>
+        <th scope="col" className="px-3 py-3 md:px-6 md:py-6">
           Title
         </th>
         <th scope="col" className="px-3 py-3 md:px-6 md:py-6">
           Description
-        </th>
-        <th scope="col" className="px-3 py-3 md:px-6 md:py-6">
-          Tags
         </th>
         <th colSpan="3" scope="col" className="px-3 py-3 md:px-6 md:py-6">
           Action

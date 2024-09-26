@@ -4,7 +4,7 @@ const TableDataRow = ({ courses, selectCourses, handleCheckbox }) => {
   return (
     <Fragment>
       {courses.map((course) => (
-        <tr className="bg-white border-b" key={course._id}>
+        <tr className="bg-white border-b" key={course.id}>
           <td className="px-3 py-3 md:px-6 md:py-6">
             <input
               type="checkbox"
@@ -18,12 +18,10 @@ const TableDataRow = ({ courses, selectCourses, handleCheckbox }) => {
               }}
             />
           </td>
+          <td className="px-3 py-3 md:px-6 md:py-6"><img className="w-20" src={`http://127.0.0.1:8000/storage/`+course.thumbnail_url} alt={course.slug} /></td>
           <td className="px-3 py-3 md:px-6 md:py-6">{course.title}</td>
           <td className="px-3 py-3 md:px-6 md:py-6">
             {course.short_description}
-          </td>
-          <td className="px-3 py-3 md:px-6 md:py-6 truncate">
-            {course.tags.map((tag) => tag).join(", ")}
           </td>
           <td className="px-3 py-3 md:px-6 md:py-6">
             <svg

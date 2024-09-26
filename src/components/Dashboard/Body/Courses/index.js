@@ -10,9 +10,9 @@ const Course = () => {
   }, []);
 
   const getData = async () => {
-    const data = await fetch("https://namastedev.com/api/v1/courses");
+    const data = await fetch("http://127.0.0.1:8000/api/course/all");
     const json = await data.json();
-    setCourse(json.data.courses);
+    setCourse(json);
   };
 
   return (
