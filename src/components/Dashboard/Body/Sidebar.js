@@ -6,8 +6,7 @@ const Sidebar = () => {
   const menuOpen = useSelector((store) => store.dashboard.isMenuOpen);
   const location = useLocation();
 
-  const isActive = (path) =>
-    location.pathname === path || location.pathname.startsWith(path);
+  const isActive = (path) => location.pathname === path || location.pathname.startsWith(path);
   return (
     menuOpen && (
       <div className="w-[13rem] md:w-[13.5rem] h-[86vh] absolute md:static z-50 md:z-0 bg-stone-200 overflow-y-scroll no-scrollbar">
