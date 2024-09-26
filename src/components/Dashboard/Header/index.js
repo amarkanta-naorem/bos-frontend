@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { sidebarToggleMenu } from "../../../utils/redux/Slicer/DashboardSlice";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
   const dispatch = useDispatch();
   const sidebarToggleMenuHandler = () => {
     dispatch(sidebarToggleMenu());
   };
+
+  const handleprofile = () => {
+    setIsProfileDropdownOpen(!isProfileDropdownOpen);
+  };
+
   return (
     <nav className="w-full md:h-[13vh] flex flex-col md:flex-row justify-between mb-1 items-start md:items-center md:py-9 md:px-5">
       <div className="w-full md:w-auto p-5 flex flex-row justify-between items-center">
@@ -50,16 +56,36 @@ const Header = () => {
             <path d="M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416l384 0c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8l0-18.8c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
           </svg>
         </li>
-        <li className="mx-3 cursor-pointer flex flex-row items-center justify-center">
-          <img
-            src="https://scontent.fdel3-2.fna.fbcdn.net/v/t39.30808-6/452293749_1030951565061751_4534046625543131168_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=8pB16ScEXcsQ7kNvgETLD74&_nc_ht=scontent.fdel3-2.fna&_nc_gid=ANmsInX8NPTXM3XYdBfhgOo&oh=00_AYBtuRXb78FsDWGJrMJdb7b8Po45_H5rkK4cEWdHHeQnlA&oe=66EF12D5"
-            alt="ProfilePicture"
-            className="w-7 h-7 rounded-md"
-          />
-          <div className="hidden md:flex flex-col px-2">
-            <p className="text-xs font-bold text-teal-950">Amarkanta Naorem</p>
-            <span className="text-xs text-gray-400 font-semibold">admin</span>
+        <li className="mx-3 cursor-pointer" onClick={handleprofile}>
+          <div className="relative flex flex-row items-center justify-center">
+            <img
+              src="https://scontent.fdel27-1.fna.fbcdn.net/v/t39.30808-6/452293749_1030951565061751_4534046625543131168_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=yTueAsJVpQYQ7kNvgELb5Ah&_nc_ht=scontent.fdel27-1.fna&_nc_gid=AYHFOdkkNSHw84VzLUjxMGt&oh=00_AYApr4bMZjFWMmSYyVMRQuR6wpBC0U2IjxGA7htY6UXWgg&oe=66F6C395"
+              alt="ProfilePicture"
+              className="w-7 h-7 rounded-md"
+            />
+            <div className="hidden md:flex flex-col px-2">
+              <p className="text-xs font-bold text-teal-950">
+                Amarkanta Naorem
+              </p>
+              <span className="text-xs text-gray-400 font-semibold">admin</span>
+            </div>
           </div>
+
+          {isProfileDropdownOpen && (
+            <div className="bg-violet-100 absolute mt-2 px-3 w-40 rounded">
+              <ul className="py-2">
+                <li className="py-1 hover:px-2 hover:transform hover:translate-y-0 hover:duration-500 border-b border-gray-300">
+                  <Link>My Profile</Link>
+                </li>
+                <li className="py-1 hover:px-2 hover:transform hover:translate-y-0 hover:duration-500 border-b border-gray-300">
+                  <Link>Setting</Link>
+                </li>
+                <li className="py-1 hover:px-2 hover:transform hover:translate-y-0 hover:duration-500">
+                  <Link>Logout</Link>
+                </li>
+              </ul>
+            </div>
+          )}
         </li>
         <li className="mx-3 cursor-pointer">
           <button className="bg-teal-950 p-1 rounded-md">
