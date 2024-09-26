@@ -8,7 +8,7 @@ const LandingPage = () => {
         <h1>Hello, this is Landing Page</h1>
       </div>
       <div className="w-36 mx-auto border p-5 cursor-pointer">
-        <Link to={'/system/dashboard'}>Dashboard</Link>
+        <Link to={'auth/system/login'}>Dashboard</Link>
       </div>
     </Fragment>
   );

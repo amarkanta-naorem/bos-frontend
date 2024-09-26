@@ -5,12 +5,29 @@ import Course from "../components/Dashboard/Body/Courses";
 import Dashboard from "../components/Dashboard/Body/Dashboard/dashboard";
 import LandingPage from "../components/LandingPage";
 import SystemErrorPage from "../components/Dashboard/Error/SystemErrorPage";
+import SystemSignUp from "../components/Auth/SystemAuth/SystemSignUp";
+import SystemAuth from "../components/Auth/SystemAuth/SystemAuth";
+import SystemSignIn from "../components/Auth/SystemAuth/SystemSignIn";
 
 const WebRouter = createBrowserRouter([
   {
     path: "/",
     element: <LandingPage />,
     errorElement: <SystemErrorPage />,
+  },
+  {
+    path: "/auth/system/",
+    element: <SystemAuth />,
+    children: [
+      {
+        path: "login",
+        element: <SystemSignIn />
+      },
+      {
+        path: "registered",
+        element: <SystemSignUp />
+      },
+    ]
   },
   {
     path: "/system/",
