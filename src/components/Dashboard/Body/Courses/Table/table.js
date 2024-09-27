@@ -43,7 +43,7 @@ const DataTable = ({ courses }) => {
             courses={courses}
             selectCourses={selectCourses}
             handleCheckbox={handleCheckbox}
-            viewCourse={() => setViewCourse(!viewCourse)}
+            modalPopUp={() => setViewCourse(!viewCourse)}
           />
         </tbody>
       </table>

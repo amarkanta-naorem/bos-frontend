@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-const TableDataRow = ({ courses, selectCourses, handleCheckbox, viewCourse }) => {
+const TableDataRow = ({ courses, selectCourses, handleCheckbox, modalPopUp }) => {
   return (
     <Fragment>
       {courses.map((course) => (
@@ -29,7 +29,7 @@ const TableDataRow = ({ courses, selectCourses, handleCheckbox, viewCourse }) =>
           <td className="px-3 py-3 md:px-6 md:py-6">
             {course.instructor.first_name  + " "  + course.instructor.last_name}
           </td>
-          <td className="px-3 py-3 md:px-6 md:py-6" onClick={() => viewCourse()}>
+          <td className="px-3 py-3 md:px-6 md:py-6" onClick={() => modalPopUp()}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
