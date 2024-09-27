@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import TableDataRow from "./tableDataRow";
 import TableHeadRow from "./tableHeadRow";
+import ViewModal from "./Modal/viewModal";
 
 const DataTable = ({ courses }) => {
   const [selectCourses, setSelectCourses] = useState([]);
+  const [viewCourse, setViewCourse] = useState(false);
 
   useEffect(() => {
     console.log("Selected Courses:", selectCourses); // Logs whenever selectCourses changes
@@ -41,9 +43,11 @@ const DataTable = ({ courses }) => {
             courses={courses}
             selectCourses={selectCourses}
             handleCheckbox={handleCheckbox}
+            viewCourse={() => setViewCourse(!viewCourse)}
           />
         </tbody>
       </table>
+      <ViewModal isVisible={viewCourse} onClose={() => setViewCourse(!viewCourse)} />
     </div>
   );
 };
