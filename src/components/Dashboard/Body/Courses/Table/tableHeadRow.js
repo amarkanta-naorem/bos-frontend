@@ -1,22 +1,11 @@
 import React, { Fragment } from "react";
 
-const TableHeadRow = ({
-  handleMultipleCheckboxChange,
-  selectCourses,
-  courses,
-}) => {
+const TableHeadRow = () => {
   return (
     <Fragment>
       <tr>
         <th scope="col" className="px-3 py-3 md:px-6 md:py-6">
-          <input
-            type="checkbox"
-            onChange={handleMultipleCheckboxChange}
-            className="w-4 h-4"
-            checked={
-              selectCourses.length === courses.length && courses.length > 0
-            } // Checkbox checked if all courses are selected
-          />
+          <input type="checkbox" className="w-4 h-4" />
         </th>
         <th scope="col" className="px-3 py-3 md:px-6 md:py-6">
           Thumbnail

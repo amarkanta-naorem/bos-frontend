@@ -1,24 +1,20 @@
 import React, { Fragment } from "react";
 
-const TableDataRow = ({ courses, selectCourses, handleCheckbox, modalPopUp }) => {
+const TableDataRow = ({ courses, modalPopUp }) => {
   return (
     <Fragment>
       {courses.map((course) => (
         <tr className="bg-white border-b" key={course.id}>
           <td className="px-3 py-3 md:px-6 md:py-6">
-            <input
-              type="checkbox"
-              value={course._id}
-              checked={selectCourses.some(
-                (selected) => selected._id === course._id
-              )} // Check if course is selected
-              className="w-4 h-4"
-              onChange={(e) => {
-                handleCheckbox(e, course);
-              }}
+            <input type="checkbox" className="w-4 h-4" />
+          </td>
+          <td className="px-3 py-3 md:px-6 md:py-6">
+            <img
+              className="w-20"
+              src={`http://127.0.0.1:8000/storage/` + course.thumbnail_url}
+              alt={course.slug}
             />
           </td>
-          <td className="px-3 py-3 md:px-6 md:py-6"><img className="w-20" src={`http://127.0.0.1:8000/storage/`+course.thumbnail_url} alt={course.slug} /></td>
           <td className="px-3 py-3 md:px-6 md:py-6">{course.title}</td>
           <td className="px-3 py-3 md:px-6 md:py-6">
             {course.short_description}
@@ -27,9 +23,12 @@ const TableDataRow = ({ courses, selectCourses, handleCheckbox, modalPopUp }) =>
             {course.enrollments_count}
           </td>
           <td className="px-3 py-3 md:px-6 md:py-6">
-            {course.instructor.first_name  + " "  + course.instructor.last_name}
+            {course.instructor.first_name + " " + course.instructor.last_name}
           </td>
-          <td className="px-3 py-3 md:px-6 md:py-6" onClick={() => modalPopUp()}>
+          <td
+            className="px-3 py-3 md:px-6 md:py-6"
+            onClick={() => modalPopUp(course)}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
