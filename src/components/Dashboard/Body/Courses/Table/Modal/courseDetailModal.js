@@ -1,5 +1,6 @@
+import { CreatedAt } from "../../../../../../utils/common/common";
+
 const CourseDetailModal = ({ course }) => {
-  console.log(course);
   return (
     <div className="p-5">
       <div className="flex justify-between w-full">
@@ -46,7 +47,7 @@ const CourseDetailModal = ({ course }) => {
               >
                 <path d="M96 32l0 32L48 64C21.5 64 0 85.5 0 112l0 48 448 0 0-48c0-26.5-21.5-48-48-48l-48 0 0-32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 32L160 64l0-32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192L0 192 0 464c0 26.5 21.5 48 48 48l352 0c26.5 0 48-21.5 48-48l0-272z" />
               </svg>
-              <span className="ms-2 text-sm">10 Sep, 2024</span>
+              <span className="ms-2 text-sm">{CreatedAt(course.created_at)}</span>
             </li>
             {course.tags.length !== 0 && (
               <li className="flex items-center mb-3">
