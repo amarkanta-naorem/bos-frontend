@@ -66,17 +66,6 @@ const CourseDetailModal = ({ course }) => {
             )}
           </ul>
 
-          {course.is_premium && (
-            <div className="my-7 shadow p-3">
-              <p className="mb-3">
-                This content is available only for premium members.
-              </p>
-              <button className="bg-blue-800 p-2 rounded-md font-bold text-white">
-                Start Learning
-              </button>
-            </div>
-          )}
-
           <div className="my-5">
             <h2 className="text-lg font-bold tracking-tight text-gray-900 my-3">
               About This Course
@@ -90,7 +79,7 @@ const CourseDetailModal = ({ course }) => {
         </div>
         <div className="w-1/2 ml-5">
           <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-            {course.title}
+            <img src={`http://127.0.0.1:8000/storage/${course.thumbnail_url}`} alt="" />
           </h1>
         </div>
       </div>
