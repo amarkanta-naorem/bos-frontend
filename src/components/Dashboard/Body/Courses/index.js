@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ButtonLists from "./Buttons/buttonLists";
 import DataTable from "./Table/table";
+import { Link } from "react-router-dom";
 
 const Course = () => {
   const [courses, setCourse] = useState([]);
@@ -19,7 +20,7 @@ const Course = () => {
       <div className="flex justify-between items-center px-5 md:px-10 pt-3 md:pt-5">
         <h1 className="text-2xl font-extrabold text-teal-950">Courses</h1>
         <p className="text-xs text-teal-950 font-mono">
-          <a href="/">Dashboard</a> / Courses
+          <Link to={"/system/dashboard"}>Dashboard</Link><span className="select-none"> / Courses</span>
         </p>
       </div>
       <hr className="w-11/12 h-1 mx-auto my-3" />

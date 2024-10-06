@@ -8,6 +8,7 @@ import SystemErrorPage from "../components/Dashboard/Error/SystemErrorPage";
 import SystemSignUp from "../components/Auth/SystemAuth/SystemSignUp";
 import SystemAuth from "../components/Auth/SystemAuth/SystemAuth";
 import SystemSignIn from "../components/Auth/SystemAuth/SystemSignIn";
+import Library from "../components/Dashboard/Body/Library/library";
 
 const WebRouter = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const WebRouter = createBrowserRouter([
           {
             path: "/system/course",
             element: <Course />,
+          },
+          {
+            path: "/system/library",
+            element: <Library />,
           },
           {
             path: "*",

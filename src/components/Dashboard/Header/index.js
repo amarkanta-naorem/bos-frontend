@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-import { sidebarToggleMenu } from "../../../utils/redux/Slicer/DashboardSlice";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
-  const dispatch = useDispatch();
   const sidebarToggleMenuHandler = () => {
-    dispatch(sidebarToggleMenu());
+    alert(1)
   };
 
   const handleprofile = () => {
