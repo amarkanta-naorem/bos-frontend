@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import SidebarToggleContext from "../../../utils/Contexts/SidebarToggleContext";
 
 const Header = () => {
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+  const { setIsSidebarToggle } = useContext(SidebarToggleContext);
+
   const sidebarToggleMenuHandler = () => {
-    alert(1)
+    setIsSidebarToggle((prev) => ({
+      ...prev, // Keep the current state
+      isToggleOpen: !prev.isToggleOpen, // Toggle the sidebar state
+    }));
   };
 
   const handleprofile = () => {
@@ -18,7 +24,7 @@ const Header = () => {
           <img
             src="https://i.postimg.cc/nVkPgV71/Be-On-School1.png"
             alt="Be-On-School"
-            className="h-7 pr-7"
+            className="h-7"
           />
         </Link>
         <svg
@@ -26,7 +32,7 @@ const Header = () => {
           viewBox="0 0 448 512"
           height="25px"
           fill="#042f2e"
-          className="cursor-pointer"
+          className="cursor-pointer pl-7"
           onClick={() => sidebarToggleMenuHandler()}
         >
           <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
