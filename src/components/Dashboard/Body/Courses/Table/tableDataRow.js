@@ -1,6 +1,6 @@
 import React, { Fragment, useContext } from "react";
 import { BEONSCHOOL } from "../../../../../utils/common/common";
-import { CourseContext } from "../../../../../utils/Contexts/CourseContext";
+import { CourseContext } from "../../../../../utils/contexts/CourseContext";
 
 const TableDataRow = ({ modalPopUp }) => {
   const {courses} = useContext(CourseContext);

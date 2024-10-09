@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import SidebarToggleContext from "../../../utils/Contexts/SidebarToggleContext";
+import SidebarToggleContext from "../../../utils/contexts/SidebarToggleContext";
 
 const Header = () => {
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
