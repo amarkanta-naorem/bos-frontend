@@ -3,14 +3,14 @@ import TableDataRow from "./tableDataRow";
 import TableHeadRow from "./tableHeadRow";
 import ViewModal from "./Modal/viewModal";
 
-const DataTable = ({ courses }) => {
+const DataTable = () => {
   const [viewCourse, setViewCourse] = useState(false);
   const [getCourseByIds, setGetCourseByIds] = useState(null);
 
   const modalPopUp = (course) => {
     setGetCourseByIds(course);
-    setViewCourse(!viewCourse)
-  }
+    setViewCourse(!viewCourse);
+  };
 
   return (
     <div className="overflow-x-scroll md:no-scrollbar mx-5 md:px-5 mt-5 md:mt-10 mb-20">
@@ -19,10 +19,7 @@ const DataTable = ({ courses }) => {
           <TableHeadRow />
         </thead>
         <tbody>
-          <TableDataRow
-            courses={courses}
-            modalPopUp={modalPopUp}
-          />
+          <TableDataRow modalPopUp={modalPopUp} />
         </tbody>
       </table>
       <ViewModal
