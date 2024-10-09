@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ButtonLists from "./Buttons/buttonLists";
 import DataTable from "./Table/table";
 import { Link } from "react-router-dom";
+import { BEONSCHOOL } from "../../../../utils/common/common";
 
 const Course = () => {
   const [courses, setCourse] = useState([]);
@@ -10,7 +11,7 @@ const Course = () => {
   }, []);
 
   const getData = async () => {
-    const data = await fetch("http://127.0.0.1:8000/api/course");
+    const data = await fetch(`${BEONSCHOOL}/api/course`);
     const json = await data.json();
     setCourse(json.data);
   };

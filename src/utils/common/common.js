@@ -5,3 +5,5 @@ export const CreatedAt = (requestDate) => {
   const year = dateObj.getFullYear();
   return `${date}, ${month} ${year}`;
 };
+
+export const BEONSCHOOL = 'http://beonschool.test'

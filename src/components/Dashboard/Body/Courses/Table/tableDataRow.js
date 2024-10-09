@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { BEONSCHOOL } from "../../../../../utils/common/common";
 
 const TableDataRow = ({ courses, modalPopUp }) => {
   return (
@@ -11,7 +12,7 @@ const TableDataRow = ({ courses, modalPopUp }) => {
           <td className="px-3 py-3 md:px-6 md:py-6">
             <img
               className="w-20"
-              src={`http://127.0.0.1:8000/storage/` + course.thumbnail_url}
+              src={`${BEONSCHOOL}/storage/` + course.thumbnail_url}
               alt={course.slug}
             />
           </td>

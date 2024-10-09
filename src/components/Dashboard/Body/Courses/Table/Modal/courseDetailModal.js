@@ -1,4 +1,4 @@
-import { CreatedAt } from "../../../../../../utils/common/common";
+import { BEONSCHOOL, CreatedAt } from "../../../../../../utils/common/common";
 
 const CourseDetailModal = ({ course }) => {
   return (
@@ -79,7 +79,7 @@ const CourseDetailModal = ({ course }) => {
         </div>
         <div className="w-1/2 ml-5">
           <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-            <img src={`http://127.0.0.1:8000/storage/${course.thumbnail_url}`} alt="" />
+            <img src={`${BEONSCHOOL}/storage/${course.thumbnail_url}`} alt="" />
           </h1>
         </div>
       </div>
