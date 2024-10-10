@@ -19,17 +19,17 @@ const TableDataRow = ({ modalPopUp }) => {
             />
           </td>
           <td className="px-3 py-3 md:px-6 md:py-6">{course.title}</td>
-          <td className="px-3 py-3 md:px-6 md:py-6">
+          <td className="px-3 py-3 md:px-6 md:py-6 max-w-[20rem] h-12 overflow-hidden text-ellipsis whitespace-nowrap">
             {course.short_description}
           </td>
-          <td className="px-3 py-3 md:px-6 md:py-6">
+          <td className="px-3 py-3 md:px-6 md:py-6 text-center">
             {course.enrollments_count}
           </td>
           <td className="px-3 py-3 md:px-6 md:py-6">
             {course.instructor.first_name + " " + course.instructor.last_name}
           </td>
           <td
-            className="px-3 py-3 md:px-6 md:py-6"
+            className="px-3 py-3 md:px-6 md:py-6 flex justify-center items-center"
             onClick={() => modalPopUp(course)}
           >
             <svg

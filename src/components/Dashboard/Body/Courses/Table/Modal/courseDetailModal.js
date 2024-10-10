@@ -88,7 +88,7 @@ const CourseDetailModal = ({ course }) => {
 
         <div className="w-1/3">
           <h1 className="text-2xl font-serif font-bold tracking-tight text-gray-900 mb-5">
-            Topics
+            Course contents
           </h1>
           <ul>
             {course.sections.map((section) => (

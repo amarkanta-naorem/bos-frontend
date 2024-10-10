@@ -30,7 +30,7 @@ const ViewModal = ({ isVisible, onClose, courseDetails }) => {
             </svg>
           </div>
 
-          <div className="min-h-[30rem] bg-gray-100">
+          <div className="min-h-[522px] bg-gray-100">
             <CourseDetailModal course={courseDetails} />
           </div>
 

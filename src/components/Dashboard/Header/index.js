@@ -75,7 +75,7 @@ const Header = () => {
           </div>
 
           {isProfileDropdownOpen && (
-            <div className="bg-violet-100 absolute mt-2 px-3 w-40 rounded">
+            <div className="bg-violet-100 absolute mt-2 px-3 w-40 rounded z-50">
               <ul className="py-2">
                 <li className="py-1 hover:px-2 hover:transform hover:translate-y-0 hover:duration-500 border-b border-gray-300">
                   <Link>My Profile</Link>
