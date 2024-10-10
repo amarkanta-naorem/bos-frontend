@@ -62,7 +62,7 @@ const Header = () => {
         <li className="mx-3 cursor-pointer" onClick={handleprofile}>
           <div className="relative flex flex-row items-center justify-center">
             <img
-              src="https://scontent.fdel1-8.fna.fbcdn.net/v/t39.30808-6/452293749_1030951565061751_4534046625543131168_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=zsatTEvKMeUQ7kNvgHhSwfA&_nc_ht=scontent.fdel1-8.fna&_nc_gid=Aok0JFWvoh4_UGtBokIgiCV&oh=00_AYCEKEmsJg058ue1Ha-FP_w9ZdYTVAiMwQYlpzzK4aQDcA&oe=6705B495"
+              src="https://avatars.githubusercontent.com/u/178073341?v=4"
               alt="ProfilePicture"
               className="w-7 h-7 rounded-md"
             />
