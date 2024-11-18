@@ -3,7 +3,7 @@ import App from "../App";
 import Body from "../components/Dashboard/Body";
 import Course from "../components/Dashboard/Body/Courses";
 import Dashboard from "../components/Dashboard/Body/Dashboard/dashboard";
-import LandingPage from "../components/LandingPage";
+import LandingPage from "../components/LandingPage/LandingPage";
 import SystemErrorPage from "../components/Dashboard/Error/SystemErrorPage";
 import SystemSignUp from "../components/Auth/SystemAuth/SystemSignUp";
 import SystemAuth from "../components/Auth/SystemAuth/SystemAuth";
