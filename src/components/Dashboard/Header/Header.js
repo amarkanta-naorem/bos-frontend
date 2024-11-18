@@ -34,8 +34,8 @@ const Header = () => {
           />
         </Link>
         <img
-            src={ToggleBar} a
-            lt={"ToggleBar"}
+            src={ToggleBar}
+            alt={"ToggleBar"}
             className="cursor-pointer pl-7"
             onClick={() => sidebarToggleMenuHandler()}
         />

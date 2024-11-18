@@ -10,7 +10,7 @@ import SystemAuth from "../components/Auth/SystemAuth/SystemAuth";
 import SystemSignIn from "../components/Auth/SystemAuth/SystemSignIn";
 import Library from "../components/Dashboard/Body/Library/library";
 
-const WebRouter = createBrowserRouter([
+const Routes = createBrowserRouter([
   {
     path: "/",
     element: <LandingPage />,
@@ -64,4 +64,4 @@ const WebRouter = createBrowserRouter([
   },
 ]);
 
-export default WebRouter;
+export default Routes;

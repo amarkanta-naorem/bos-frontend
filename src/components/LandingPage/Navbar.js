@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between w-1/2">
           {/* Logo */}
           <img
-            className="w-40"
+            className="w-40 cursor-pointer"
             src="https://i.postimg.cc/nVkPgV71/Be-On-School1.png"
             alt="BeOnSchool-logo"
           />
@@ -58,7 +58,7 @@ const Navbar = () => {
                 ))}
               </ul>
             </li>
-            <li className="mx-5">
+            <li className="mx-5 cursor-pointer">
               <img src={Heart} alt={"Heart"} />
             </li>
             <li className="mx-5 relative cursor-pointer">
@@ -67,7 +67,7 @@ const Navbar = () => {
                 2
               </span>
             </li>
-            <li className="mx-5">
+            <li className="mx-5 cursor-pointer">
               <div className="relative flex flex-row items-center justify-center">
                 <img
                   src="https://avatars.githubusercontent.com/u/178073341?v=4"
