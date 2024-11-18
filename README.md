@@ -1,4 +1,4 @@
-# BeOnSchool Frontend Development (bos-frontend)
+# BeOnSchool Frontend Development
 
 **BeOnSchool** is a Learning Management System (LMS) where instructors can create courses and the students can enroll.
 
