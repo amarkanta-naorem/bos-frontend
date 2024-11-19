@@ -4,6 +4,7 @@ import Cart from "../../assets/icons/cart.svg";
 import Setting from "../../assets/icons/setting.svg";
 import Search from "../../assets/icons/search.svg";
 import DownArrow from "../../assets/icons/down-arrow.svg";
+import Logo from "../../assets/images/Logo.svg";
 
 const categories = [
   "Software Development",
@@ -14,12 +15,13 @@ const categories = [
 const Navbar = () => {
   return (
     <nav>
-      <div className="flex items-center justify-between mx-10 py-8 px-3">
-        <div className="flex items-center justify-between w-1/2">
+      <div className="flex items-center justify-between py-8 mx-10">
+        <div className="flex justify-between w-1/2">
           {/* Logo */}
           <img
-            className="w-40 cursor-pointer"
-            src="https://i.postimg.cc/nVkPgV71/Be-On-School1.png"
+            className="w-56 cursor-pointer"
+            // src="https://i.postimg.cc/nVkPgV71/Be-On-School1.png"
+            src={Logo}
             alt="BeOnSchool-logo"
           />
           {/* Navbar Search Bar */}
@@ -36,10 +38,10 @@ const Navbar = () => {
         </div>
 
         {/* Navbar Menu List */}
-        <div>
+        <div className="w-1/2">
           <ul className="flex items-center justify-between">
-            <li className="relative group mx-5 inline-flex items-center cursor-pointer">
-              Categories
+            <li className="relative z-10 group mx-5 inline-flex items-center cursor-pointer hover:text-gray-600">
+              CATEGORIES
               <span className="mx-2">
                 <img src={DownArrow} alt="DownArrow" />
               </span>
@@ -58,6 +60,7 @@ const Navbar = () => {
                 ))}
               </ul>
             </li>
+            <li className="mx-5 cursor-pointer hover:text-gray-600">FORUM</li>
             <li className="mx-5 cursor-pointer">
               <img src={Heart} alt={"Heart"} />
             </li>
@@ -84,7 +87,7 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li className="mx-5 p-1 bg-teal-950 rounded cursor-pointer">
+            <li className=" p-1 bg-teal-950 rounded cursor-pointer">
               <img src={Setting} alt={"Setting"} />
             </li>
           </ul>

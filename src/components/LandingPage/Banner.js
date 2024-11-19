@@ -1,21 +1,51 @@
-import Laptop from "../../assets/images/Laptop.webp";
+import AIBG from "../../assets/images/AIBG.webp";
+import { MENUS } from "../../utils/common/common";
 
 const Banner = () => {
   return (
-    <div className="flex items-center justify-between mx-10 p-10 rounded-lg bg-[#8897e8]">
-      <div className="w-1/2">
-        <h1 className="text-[3rem] font-bold text-white">
-            Unlock Your Potential, Learn Without Limits.
-        </h1>
-        <p className="text-md text-gray-300">
-            Join a vibrant community of learners and educators!
-            Create, connect, and grow with BeOnSchool – the ultimate
-            online platform for courses, live classes, and progress tracking.
-            Step into a world of limitless possibilities and stay inspired on your educational journey.
-        </p>
-          <button className="bg-[#4F46E5] rounded p-3 text-xl font-bold text-white px-10 my-3">Join Now</button>
+    <div
+      className="relative flex items-center justify-between mx-10 p-10 rounded-lg bg-origin-content bg-contain bg-bottom bg-teal-950"
+      style={{ backgroundImage: `url(${AIBG})` }}
+    >
+      <div className="absolute top-4 left-4 flex">
+        <span className="bg-red-500 w-4 h-4 rounded-full"></span>
+        <span className="bg-yellow-500 w-4 h-4 mx-2 rounded-full"></span>
+        <span className="bg-green-500 w-4 h-4 rounded-full"></span>
       </div>
-      <img src={Laptop} alt="Laptop" />
+      <div className="text-8xl font-bold text-white uppercase">
+        <p>Learn</p>
+        <p>FROM THE</p>
+        <p className="text-sky-500">BEONSCHOOL MASTERS</p>
+      </div>
+      <div className="bg-[#1e1e1e] p-5">
+        <div className="bg-[#252526] text-[#d4d4d4] font-mono text-sm p-6 rounded-lg shadow-lg w-[20rem] max-w-3xl">
+          <div className="text-xl">
+            <span className="text-[#569cd6] font-bold">"menu"</span>
+            <span className="text-[#dcdcaa]"> =></span> [
+          </div>
+          <ul>
+            {MENUS.map((menu, index) => (
+              <li
+                key={index}
+                className="pl-3 p-1 my-3 text-xl cursor-pointer hover:bg-[#1e1e1e] rounded transition duration-1000 ease-out"
+              >
+                <span className="text-[#6a9955] text-sm line-clamp-2">
+                  // {menu.slug}
+                </span>
+                <span className="text-[#569cd6] font-bold">
+                  "{menu.action}"
+                </span>
+                <span className="text-[#dcdcaa]"> => </span>
+                <span className="text-[#c586c0] capitalize font-bold">
+                  "{menu.to}"
+                </span>
+                ,
+              </li>
+            ))}
+          </ul>
+          <div className="text-xl">];</div>
+        </div>
+      </div>
     </div>
   );
 };

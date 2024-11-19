@@ -3,10 +3,10 @@ import Navbar from "./Navbar";
 import Banner from "./Banner";
 const LandingPage = () => {
   return (
-      <>
-        <Navbar />
-        <Banner />
-      </>
+    <>
+      <Navbar />
+      <Banner />
+    </>
   );
 };
 
