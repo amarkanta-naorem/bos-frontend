@@ -1,8 +1,5 @@
 import { createContext } from "react";
 
-const SidebarToggleContext = createContext({
-    isToggleOpen: true,
-    setIsSidebarToggle: () => {} // Placeholder function
-})
+const SidebarToggleContext = createContext();
 
-export default SidebarToggleContext
+export default SidebarToggleContext;
