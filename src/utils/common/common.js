@@ -6,7 +6,7 @@ export const CreatedAt = (requestDate) => {
   return `${date}, ${month} ${year}`;
 };
 
-export const BEONSCHOOL = "http://beonschool.test";
+export const BEONSCHOOL = "http://be-on-school-backend.test";
 
 export const MENUS = [
   {

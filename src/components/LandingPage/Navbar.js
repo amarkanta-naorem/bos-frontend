@@ -40,7 +40,7 @@ const Navbar = () => {
         {/* Navbar Menu List */}
         <div className="w-1/2">
           <ul className="flex items-center justify-between">
-            <li className="relative z-10 group mx-5 inline-flex items-center cursor-pointer hover:text-gray-600">
+            <li className="text-white relative z-10 group mx-5 inline-flex items-center cursor-pointer hover:text-gray-600">
               CATEGORIES
               <span className="mx-2">
                 <img src={DownArrow} alt="DownArrow" />
@@ -60,13 +60,15 @@ const Navbar = () => {
                 ))}
               </ul>
             </li>
-            <li className="mx-5 cursor-pointer hover:text-gray-600">FORUM</li>
+            <li className="text-white mx-5 cursor-pointer hover:text-gray-600">
+              FORUM
+            </li>
             <li className="mx-5 cursor-pointer">
               <img src={Heart} alt={"Heart"} />
             </li>
             <li className="mx-5 relative cursor-pointer">
               <img className="relative z-10" src={Cart} alt={"Cart"} />
-              <span className="absolute -top-4 -right-3 bg-teal-950 rounded-full min-w-[1.5rem] min-h-[1.5rem] flex items-center justify-center text-white text-sm z-0">
+              <span className="absolute -top-4 -right-3 bg-[#252526] rounded-full min-w-[1.5rem] min-h-[1.5rem] flex items-center justify-center text-white text-sm z-0">
                 2
               </span>
             </li>
@@ -78,7 +80,7 @@ const Navbar = () => {
                   className="w-10 h-10 rounded-md"
                 />
                 <div className="hidden md:flex flex-col px-2 w-44">
-                  <p className="text-xs font-bold text-teal-950 whitespace-nowrap overflow-hidden text-ellipsis">
+                  <p className="text-xs font-bold text-gray-200 whitespace-nowrap overflow-hidden text-ellipsis">
                     Naorem Amarkanta Meitei
                   </p>
                   <span className="text-xs text-gray-400 font-semibold whitespace-nowrap overflow-hidden text-ellipsis">
@@ -87,7 +89,7 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li className=" p-1 bg-teal-950 rounded cursor-pointer">
+            <li className=" p-1 bg-[#252526] rounded cursor-pointer">
               <img src={Setting} alt={"Setting"} />
             </li>
           </ul>
