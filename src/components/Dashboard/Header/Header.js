@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 // import SidebarToggleContext from "../../../utils/contexts/SidebarToggleContext";
-import { SidebarToggleContext } from './utils/contexts/SidebarToggleContext';
+import { SidebarToggleContext } from '../../../utils/contexts/SidebarToggleContext';
 import Logo from "../../../assets/images/Logo.png"
 import Setting from "../../../assets/icons/setting.svg";
 import Notification from "../../../assets/icons/notification.svg";
