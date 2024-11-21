@@ -5,6 +5,7 @@ import Setting from "../../assets/icons/setting.svg";
 import Search from "../../assets/icons/search.svg";
 import DownArrow from "../../assets/icons/down-arrow.svg";
 import Logo from "../../assets/images/Logo.svg";
+import HamburgerMenu from "../../assets/icons/HamburgerMenu.svg";
 
 const categories = [
   "Software Development",
@@ -15,16 +16,16 @@ const categories = [
 const Navbar = () => {
   return (
     <nav>
-      <div className="flex items-center justify-between py-4 md:py-8 mx-3 md:mx-10">
-        <div className="flex items-center justify-between w-full md:w-1/2">
+      <div className="flex md:items-center justify-between py-4 md:py-8 mx-3 md:mx-10">
+        <div className="relative flex items-center justify-between w-full md:w-1/2">
           {/* Logo */}
           <img
             className="w-[9rem] md:w-56 cursor-pointer"
             src={Logo}
             alt="BeOnSchool-logo"
           />
-          {/* Navbar Search Bar */}
-          <form className="relative">
+           {/*Navbar Search Bar*/}
+          <form className="relative hidden md:block">
             <input
               className="border px-2 md:p-2 md:w-[30rem] outline-none rounded md:rounded-none"
               type="text"
@@ -34,7 +35,13 @@ const Navbar = () => {
               <img src={Search} alt={"Search"} />
             </button>
           </form>
+          <div className="block md:hidden">
+            <button className="w-8 h-8">
+              <img className="rotate-180" src={HamburgerMenu} alt="HamburgerMenu" />
+            </button>
+          </div>
         </div>
+
 
         {/* Navbar Menu List */}
         <div className="w-1/2 hidden md:block">
