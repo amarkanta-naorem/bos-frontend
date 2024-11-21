@@ -2,7 +2,8 @@ import React, { Fragment, useState } from "react";
 import { Outlet, useLocation } from "react-router";
 import Header from "./components/Dashboard/Header/Header";
 import LandingPage from "./components/LandingPage/LandingPage";
-import SidebarToggleContext from "./utils/contexts/SidebarToggleContext";
+// import SidebarToggleContext from "./utils/contexts/SidebarToggleContext";
+import { SidebarToggleContext } from './utils/contexts/SidebarToggleContext';
 import { CourseProvider } from "./utils/contexts/CourseContext";
 
 const App = () => {

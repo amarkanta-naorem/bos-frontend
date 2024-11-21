@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
-import SidebarToggleContext from "../../../utils/contexts/SidebarToggleContext";
+// import SidebarToggleContext from "../../../utils/contexts/SidebarToggleContext";
+import { SidebarToggleContext } from './utils/contexts/SidebarToggleContext';
 
 const Sidebar = () => {
   const { isToggleOpen } = useContext(SidebarToggleContext);
