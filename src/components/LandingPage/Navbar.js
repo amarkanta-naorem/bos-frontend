@@ -36,7 +36,7 @@ const Navbar = () => {
             </button>
           </form>
           <div className="block md:hidden">
-            <button className="w-8 h-8">
+            <button className="w-8 h-8" onClick={() => alert("Navigation menu display is in progress")}>
               <img className="rotate-180" src={HamburgerMenu} alt="HamburgerMenu" />
             </button>
           </div>
