@@ -29,6 +29,7 @@ const Banner = () => {
                 key={index}
                 className="pl-3 p-1 my-3 text-xl cursor-pointer hover:bg-[#1e1e1e] rounded transition duration-1000 ease-out"
               >
+                {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
                 <span className="text-[#6a9955] text-sm line-clamp-2">
                   // {menu.slug}
                 </span>
