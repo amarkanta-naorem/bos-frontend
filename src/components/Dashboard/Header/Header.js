@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-// import SidebarToggleContext from "../../../utils/contexts/SidebarToggleContext";
-import { SidebarToggleContext } from '../../../utils/contexts/SidebarToggleContext';
-import Logo from "../../../assets/images/Logo.png"
+import { SidebarToggleContext } from "../../../utils/contexts/SidebarToggleContext";
+import Logo from "../../../assets/images/Logo.png";
 import Setting from "../../../assets/icons/setting.svg";
 import Notification from "../../../assets/icons/notification.svg";
 import Maximize from "../../../assets/icons/maximize.svg";
@@ -35,19 +34,18 @@ const Header = () => {
           />
         </Link>
         <img
-            src={ToggleBar}
-            alt={"ToggleBar"}
-            className="cursor-pointer pl-7"
-            onClick={() => sidebarToggleMenuHandler()}
+          src={ToggleBar}
+          alt={"ToggleBar"}
+          className="cursor-pointer pl-7"
+          onClick={() => sidebarToggleMenuHandler()}
         />
-
       </div>
       <ul className="flex items-center ml-3 mb-2 md:m-0">
         <li className="mx-3 cursor-pointer">
           <img src={Maximize} alt={"Maximize"} />
         </li>
         <li className="mx-3 cursor-pointer">
-          <img src={Notification} alt={"Notification"}/>
+          <img src={Notification} alt={"Notification"} />
         </li>
         <li className="mx-3 cursor-pointer" onClick={handleprofile}>
           <div className="relative flex flex-row items-center justify-center">
@@ -60,7 +58,9 @@ const Header = () => {
               <p className="text-xs font-bold text-teal-950 whitespace-nowrap overflow-hidden text-ellipsis">
                 Amarkanta Naorem
               </p>
-              <span className="text-xs text-gray-400 font-semibold whitespace-nowrap overflow-hidden text-ellipsis">admin</span>
+              <span className="text-xs text-gray-400 font-semibold whitespace-nowrap overflow-hidden text-ellipsis">
+                admin
+              </span>
             </div>
           </div>
 
@@ -82,7 +82,7 @@ const Header = () => {
         </li>
         <li className="mx-3 cursor-pointer">
           <button className="bg-teal-950 p-1 rounded">
-            <img src={Setting} alt={"Setting"}/>
+            <img src={Setting} alt={"Setting"} />
           </button>
         </li>
       </ul>

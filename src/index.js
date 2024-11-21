@@ -10,13 +10,13 @@ const isDevelopment = process.env.NODE_ENV === "development";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    isDevelopment ? (
-        <React.StrictMode>
-            <RouterProvider router={Routes} />
-        </React.StrictMode>
-    ) : (
-        <RouterProvider router={Routes} />
-    )
+  isDevelopment ? (
+    <React.StrictMode>
+      <RouterProvider router={Routes} />
+    </React.StrictMode>
+  ) : (
+    <RouterProvider router={Routes} />
+  )
 );
 
 // If you want to start measuring performance in your app, pass a function
