@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import { SidebarToggleContext } from '../../../utils/contexts/SidebarToggleContext';
+// import { SidebarToggleContext } from '../../../utils/contexts/SidebarToggleContext';
 import Logo from "../../../assets/images/Logo.png";
 import Setting from "../../../assets/icons/setting.svg";
 import Notification from "../../../assets/icons/notification.svg";
@@ -9,13 +9,13 @@ import ToggleBar from "../../../assets/icons/toggle-bar.svg";
 
 const Header = () => {
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
-  const { setIsSidebarToggle } = useContext(SidebarToggleContext);
+  // const { setIsSidebarToggle } = useContext(SidebarToggleContext);
 
   const sidebarToggleMenuHandler = () => {
-    setIsSidebarToggle((prev) => ({
-      ...prev, // Keep the current state
-      isToggleOpen: !prev.isToggleOpen, // Toggle the sidebar state
-    }));
+    // setIsSidebarToggle((prev) => ({
+    //   ...prev, // Keep the current state
+    //   isToggleOpen: !prev.isToggleOpen, // Toggle the sidebar state
+    // }));
   };
 
   const handleprofile = () => {

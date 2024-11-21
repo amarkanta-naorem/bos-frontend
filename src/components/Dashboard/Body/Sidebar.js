@@ -1,15 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { SidebarToggleContext } from '../../../utils/contexts/SidebarToggleContext';
+// import { SidebarToggleContext } from '../../../utils/contexts/SidebarToggleContext';
 
 const Sidebar = () => {
-  const { isToggleOpen } = useContext(SidebarToggleContext);
+  // const { isToggleOpen } = useContext(SidebarToggleContext);
   const location = useLocation();
 
   const isActive = (path) =>
     location.pathname === path || location.pathname.startsWith(path);
   return (
-    isToggleOpen && (
+    // isToggleOpen && (
       <div className="w-[13rem] md:w-[13.5rem] h-[86vh] absolute md:static z-50 md:z-0 bg-stone-200 overflow-y-scroll no-scrollbar">
         <div className="flex justify-center">
           <ul className="my-2">
@@ -83,7 +83,6 @@ const Sidebar = () => {
           <span className="font-serif italic"> Amarkanta Naorem</span>
         </div>
       </div>
-    )
   );
 };
 
