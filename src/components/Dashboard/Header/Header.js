@@ -12,11 +12,10 @@ const Header = () => {
   const { setIsSidebarToggle } = useContext(SidebarToggleContext);
 
   const sidebarToggleMenuHandler = () => {
-    // setIsSidebarToggle((prev) => ({
-    //   ...prev, // Keep the current state
-    //   isToggleOpen: !prev.isToggleOpen, // Toggle the sidebar state
-    // }));
-    setIsSidebarToggle((prev) => !prev);
+    setIsSidebarToggle((prev) => ({
+      ...prev, // Keep the current state
+      isToggleOpen: !prev.isToggleOpen, // Toggle the sidebar state
+    }));
   };
 
   const handleprofile = () => {
