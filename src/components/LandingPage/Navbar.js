@@ -15,30 +15,29 @@ const categories = [
 const Navbar = () => {
   return (
     <nav>
-      <div className="flex items-center justify-between py-8 mx-10">
-        <div className="flex justify-between w-1/2">
+      <div className="flex items-center justify-between py-4 md:py-8 mx-3 md:mx-10">
+        <div className="flex items-center justify-between w-full md:w-1/2">
           {/* Logo */}
           <img
-            className="w-56 cursor-pointer"
-            // src="https://i.postimg.cc/nVkPgV71/Be-On-School1.png"
+            className="w-[9rem] md:w-56 cursor-pointer"
             src={Logo}
             alt="BeOnSchool-logo"
           />
           {/* Navbar Search Bar */}
           <form className="relative">
             <input
-              className="border p-2 w-[30rem] outline-none"
-              type="search"
+              className="border px-2 md:p-2 md:w-[30rem] outline-none rounded md:rounded-none"
+              type="text"
               placeholder="Search..."
             />
-            <button className="absolute top-0 bottom-0 right-5">
+            <button className="absolute top-0 bottom-0 right-2 md:right-5">
               <img src={Search} alt={"Search"} />
             </button>
           </form>
         </div>
 
         {/* Navbar Menu List */}
-        <div className="w-1/2">
+        <div className="w-1/2 hidden md:block">
           <ul className="flex items-center justify-between">
             <li className="text-white relative z-10 group mx-5 inline-flex items-center cursor-pointer hover:text-gray-600">
               CATEGORIES

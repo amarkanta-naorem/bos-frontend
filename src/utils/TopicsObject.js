@@ -39,7 +39,7 @@ export const TopicsObject = [
     logo: TAILWIND,
     title: "Tailwind CSS",
     series: 7,
-    videos: 114,
+    videos: 14,
   },
   {
     logo: VUE,
@@ -79,7 +79,7 @@ export const TopicsObject = [
   },
   {
     logo: AUTHENTICATION,
-    title: "Authentication",
+    title: "Auth",
     series: 4,
     videos: 36,
   },
@@ -108,15 +108,15 @@ export const TopicsObject = [
     videos: 26,
   },
   {
-    logo: VSCODE,
-    title: "Visual Studio Code",
-    series: 1,
-    videos: 16,
-  },
-  {
     logo: PHPSTORM,
     title: "PhpStorm",
     series: 1,
     videos: 18,
+  },
+  {
+    logo: VSCODE,
+    title: "Visual Studio Code",
+    series: 1,
+    videos: 16,
   },
 ];

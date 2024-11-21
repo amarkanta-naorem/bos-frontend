@@ -7,30 +7,30 @@ import GitHub from "../../assets/logos/GitHub.svg";
 
 const Footer = () => {
   return (
-    <div className="relative w-full">
-      <div className="relative flex justify-between border-t border-gray-700 rounded-3xl mt-10">
+    <div className="relative md:w-full">
+      <div className="relative flex flex-col md:flex-row justify-between border-t border-gray-700 rounded-3xl mt-5 md:mt-10">
         <img src={BgImageLeft} alt="BgImageLeft" />
-        <img src={BgImageMiddle} alt="BgImageMiddle" />
-        <img src={BgImageRight} alt="BgImageRight" />
+        <img className="hidden md:block" src={BgImageMiddle} alt="BgImageMiddle" />
+        <img className="hidden md:block" src={BgImageRight} alt="BgImageRight" />
       </div>
-      <div className="absolute top-3 w-full px-20 text-white">
-        <div className="flex flex-col items-center justify-center my-5">
-          <h1 className="text-[2.5rem] font-extrabold w-1/2 text-center">
+      <div className="absolute top-3 md:w-full px-4 md:px-20 text-white">
+        <div className="flex flex-col items-center justify-center md:my-5">
+          <h1 className="text-[1.1rem] md:text-[2.5rem] font-extrabold md:w-1/2 text-center">
             Can we email you sometimes with updates about BeOnSchool?
           </h1>
-          <form onSubmit={(e) => e.target.preventDefault} className="relative w-1/3 mt-4">
+          <form className="relative w-full md:w-1/3 mt-2 md:mt-4">
             <input
-              className="w-full placeholder:text-gray-600 placeholder:font-semibold outline-none p-3 bg-[#252526]"
+              className="w-full placeholder:text-gray-600 placeholder:font-semibold placeholder:text-sm md:placeholder:text-lg outline-none p-2 md:p-3 bg-[#252526]"
               type="text"
               placeholder="// TODO: Enter email address"
             />
-            <button type="submit" className="absolute top-1 right-1 bg-blue-600 p-2 rounded-md">
+            <button type="submit" className="absolute top-1 right-1 bg-blue-600 text-xs md:text-base p-2 rounded-md">
               Subscribe
             </button>
           </form>
         </div>
-        <div className="flex items-start justify-between">
-          <div className="text-xs">
+        <div className="flex items-start justify-between text-xs">
+          <div>
             <p className="font-bold my-3">Navigation</p>
             <ul>
               <li className="py-1 cursor-pointer hover:text-gray-500">
@@ -48,7 +48,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="text-xs text-center">
+          <div className="text-center">
             <p className="font-bold my-3">Contact</p>
             <ul>
               <li className="py-1 cursor-pointer hover:text-gray-500">
@@ -56,7 +56,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="text-xs">
+          <div>
             <p className="font-bold my-3">Social</p>
             <ul>
               <li className="py-1 cursor-pointer hover:text-gray-500">
@@ -71,7 +71,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <p className="text-white text-center my-2">Made with ❤️ in India</p>
+        <p className="text-white text-center text-xs md:text-md py-2">Made with ❤️ in India</p>
       </div>
     </div>
   );

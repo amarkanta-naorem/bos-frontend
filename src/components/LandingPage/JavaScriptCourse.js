@@ -9,7 +9,7 @@ import React from "react";
 const JavaScriptCourse = ({ course }) => {
   const { courses } = course;
   return (
-    <div className="mx-10">
+    <div className="mx-3 md:mx-10">
       {courses?.javascript && (
         <div className="overflow-x-auto no-scrollbar">
           <ul className="flex">
@@ -20,7 +20,7 @@ const JavaScriptCourse = ({ course }) => {
                 >
                   <div className="relative">
                     <img
-                        className="relative max-w-full max-h-full w-[22rem] h-[15rem] object-left object-cover rounded-t-md"
+                        className="relative md:max-w-full md:max-h-full w-[19rem] h-[12rem] md:w-[22rem] md:h-[15rem] object-left object-cover rounded-t-md"
                         src={course.thumbnail}
                         alt={course.title}
                     />
@@ -28,10 +28,10 @@ const JavaScriptCourse = ({ course }) => {
                       {course.level}
                     </p>
                     <div className="bg-[#2a323c] rounded-b-md p-2">
-                      <p className="w-[21rem] line-clamp-1 font-bold pt-2">
+                      <p className="w-[18rem] md:w-[21rem] line-clamp-1 font-bold pt-2">
                         {course.title}
                       </p>
-                      <p className="w-[21rem] line-clamp-2 text-xs pt-2">
+                      <p className="w-[18rem] md:w-[21rem] line-clamp-2 text-xs pt-2">
                         {course.description}
                       </p>
                       <div className="flex items-center justify-between my-2">
