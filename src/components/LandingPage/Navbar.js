@@ -27,6 +27,7 @@ const Navbar = () => {
           />
           <div className="block md:hidden">
             <button className="w-8 h-8" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              |
               <img
                   className="rotate-180"
                   src={HamburgerMenu}
