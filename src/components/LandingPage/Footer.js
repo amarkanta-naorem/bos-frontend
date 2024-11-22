@@ -15,12 +15,12 @@ const Footer = () => {
       </div>
       <div className="absolute top-3 md:w-full px-4 md:px-20 text-white">
         <div className="flex flex-col items-center justify-center md:my-5">
-          <h1 className="text-[1.1rem] md:text-[2.5rem] font-extrabold md:w-1/2 text-center">
+          <h1 className="text-[1rem] xs:text-[1.1rem] md:text-[2.5rem] font-extrabold md:w-1/2 text-center">
             Can we email you sometimes with updates about BeOnSchool?
           </h1>
           <form className="relative w-full md:w-1/3 mt-2 md:mt-4">
             <input
-              className="w-full placeholder:text-gray-600 placeholder:font-semibold placeholder:text-sm md:placeholder:text-lg outline-none p-2 md:p-3 bg-[#252526]"
+              className="w-full placeholder:text-gray-600 placeholder:font-semibold placeholder:text-sm md:placeholder:text-lg outline-none p-2 md:p-3 bg-[#252526] pr-20"
               type="text"
               placeholder="// TODO: Enter email address"
             />
@@ -48,7 +48,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="text-center">
+          <div>
             <p className="font-bold my-3">Contact</p>
             <ul>
               <li className="py-1 cursor-pointer hover:text-gray-500">

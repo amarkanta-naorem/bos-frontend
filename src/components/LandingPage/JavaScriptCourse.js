@@ -20,7 +20,7 @@ const JavaScriptCourse = ({ course }) => {
                 >
                   <div className="relative">
                     <img
-                        className="relative md:max-w-full md:max-h-full w-[19rem] h-[12rem] md:w-[22rem] md:h-[15rem] object-left object-cover rounded-t-md"
+                        className="relative md:max-w-full md:max-h-full w-[17rem] xs:w-[19rem] h-[10rem] xs:h-[12rem] md:w-[22rem] md:h-[15rem] object-left object-cover rounded-t-md"
                         src={course.thumbnail}
                         alt={course.title}
                     />
@@ -28,17 +28,17 @@ const JavaScriptCourse = ({ course }) => {
                       {course.level}
                     </p>
                     <div className="bg-[#2a323c] rounded-b-md p-2">
-                      <p className="w-[18rem] md:w-[21rem] line-clamp-1 font-bold pt-2">
+                      <p className="w-[16rem] xs:w-[18rem] md:w-[21rem] line-clamp-1 font-bold pt-2">
                         {course.title}
                       </p>
-                      <p className="w-[18rem] md:w-[21rem] line-clamp-2 text-xs pt-2">
+                      <p className="w-[16rem] xs:w-[18rem] md:w-[21rem] line-clamp-2 text-xs pt-2">
                         {course.description}
                       </p>
-                      <div className="flex items-center justify-between my-2">
+                      <div className="flex xs:items-center justify-between my-2">
                         <h6 className="text-mg font-bold pt-2">
-                          ₹ {course.price}
+                          ₹{course.price}
                         </h6>
-                        <ul className="flex flex-wrap items-center pt-2">
+                        <ul className="flex overflow-hidden items-center pt-2">
                           {course.tags.map((tag, index) =>
                               <li key={index}>
                                 {tag === "react" ? (
