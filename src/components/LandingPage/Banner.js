@@ -18,7 +18,7 @@ const Banner = () => {
         <p className="text-sky-500">BEONSCHOOL MASTERS</p>
       </div>
       <div className="bg-[#1e1e1e] p-3 mt-4 md:mt-0">
-        <div className="bg-[#252526] text-[#d4d4d4] font-mono text-sm p-4 md:p-6 rounded-lg shadow-lg w-[16rem] xs:w-[18rem] md:w-[20rem] md:max-w-3xl">
+        <div className="bg-[#252526] text-[#d4d4d4] font-mono text-sm p-4 md:p-6 rounded-lg shadow-lg w-[17rem] xs:w-[18rem] md:w-[20rem] md:max-w-3xl">
           <div className="text-xl">
             <span className="text-[#569cd6] font-bold text-[1.2rem] md:text-xl">"menu"</span>
             <span className="text-[#dcdcaa] text-[1.2rem] md:text-xl"> => [</span>
