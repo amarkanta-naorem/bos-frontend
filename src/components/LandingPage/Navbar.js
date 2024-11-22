@@ -16,7 +16,7 @@ const categories = [
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] =useState(false);
   return (
-    <nav className="relative">
+    <nav className="relative z-50">
       <div className="flex flex-col md:flex-row md:items-center justify-between py-4 md:py-8 mx-3 md:mx-10">
         <div className="flex items-center justify-between w-full md:w-auto">
           {/* Logo */}
