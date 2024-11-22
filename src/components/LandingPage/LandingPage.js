@@ -60,7 +60,7 @@ const LandingPage = () => {
 
           <h1 className="text-white font-bold text-sm xs:text-md md:text-4xl">Join the community</h1>
 
-          <p className="text-gray-300 text-[7px] xs:text-[8px] ms:text-sm md:max-w-4xl md:py-5">
+          <p className="text-gray-300 text-[7px] xs:text-[8px] md:text-sm md:max-w-4xl md:py-5">
             Become part of our vibrant developer community on Discord! Connect
             with like-minded learners, get real-time support, share knowledge,
             and collaborate on projects with students and professionals around
@@ -68,6 +68,7 @@ const LandingPage = () => {
           </p>
 
           <button
+              onClick={() => alert("The 'Join Discord' feature is currently under development.")}
               className="px-3 py-[0.15rem] xs:py-1 md:px-6 md:py-2 bg-gradient-to-r from-orange-400 to-pink-500 text-white xs:font-medium rounded-full shadow-lg hover:from-orange-500 hover:to-pink-600">
             Join Discord
           </button>
