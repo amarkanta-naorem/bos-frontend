@@ -52,7 +52,7 @@ const Navbar = () => {
               {/*Navbar Search Bar*/}
               <form className="relative">
                 <input
-                    className="border px-2 md:p-2 md:w-[30rem] outline-none rounded md:rounded-none"
+                    className="border pr-8 px-2 md:p-2 md:w-[30rem] outline-none rounded md:rounded-none"
                     type="text"
                     placeholder="Search..."
                 />
