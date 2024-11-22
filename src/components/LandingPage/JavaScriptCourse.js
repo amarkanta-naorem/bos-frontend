@@ -102,7 +102,7 @@ const JavaScriptCourse = ({ course }) => {
                       </div>
                       <div className="flex items-center justify-between my-2">
                         <p>⭐⭐⭐⭐⭐</p>
-                        <button className="bg-teal-700 p-2 px-4 font-bold">
+                        <button className="bg-teal-700 p-2 px-4 font-bold" onClick={() => alert("Add to cart is currently under development")}>
                           Add to cart
                         </button>
                       </div>

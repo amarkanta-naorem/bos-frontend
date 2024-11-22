@@ -31,12 +31,12 @@ const Navbar = () => {
               type="text"
               placeholder="Search..."
             />
-            <button className="absolute top-0 bottom-0 right-2 md:right-5">
+            <button className="absolute top-0 bottom-0 right-2 md:right-5" onClick={() => alert("Course search is currently under development")}>
               <img src={Search} alt={"Search"} />
             </button>
           </form>
           <div className="block md:hidden">
-            <button className="w-8 h-8" onClick={() => alert("Navigation menu display is in progress")}>
+            <button className="w-8 h-8" onClick={() => alert("Navigation menu display is currently under development.")}>
               <img className="rotate-180" src={HamburgerMenu} alt="HamburgerMenu" />
             </button>
           </div>

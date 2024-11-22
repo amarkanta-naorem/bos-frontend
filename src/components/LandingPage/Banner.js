@@ -33,11 +33,11 @@ const Banner = () => {
                 <span className="text-[#6a9955] text-sm md:text-sm line-clamp-2">
                   // {menu.slug}
                 </span>
-                <span className="text-[#569cd6] text-[1.2rem] md:text-xl font-bold">
+                <span className="text-[#569cd6] text-[1rem] xs:text-[1.2rem] md:text-xl font-bold">
                   "{menu.action}"
                 </span>
                 <span className="text-[#dcdcaa] md:text-xl"> => </span>
-                <span className="text-[#c586c0] capitalize font-bold text-[1.2rem] md:text-xl">
+                <span className="text-[#c586c0] capitalize font-bold text-[1rem] xs:text-[1.2rem] md:text-xl">
                   "{menu.to}"
                 </span>
                 ,

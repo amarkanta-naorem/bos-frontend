@@ -5,7 +5,11 @@ module.exports = {
     "./node_modules/@tailwindcss/**/*.{js,jsx,ts,tsx}", // third-party libraries (if needed)
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xs: '475px', // Custom extra-small breakpoint
+      }
+    },
   },
   plugins: [],
 };
