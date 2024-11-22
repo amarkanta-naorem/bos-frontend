@@ -4,6 +4,7 @@ import BgImageLeft from "../../assets/images/left_footer_shape.png";
 import Fackbook from "../../assets/logos/Facebook.svg";
 import LinkedIn from "../../assets/logos/LinkedIn.svg";
 import GitHub from "../../assets/logos/GitHub.svg";
+import React from "react";
 
 const Footer = () => {
   return (
@@ -20,9 +21,9 @@ const Footer = () => {
           </h1>
           <form className="relative w-full md:w-1/3 mt-2 md:mt-4">
             <input
-              className="w-full placeholder:text-gray-600 placeholder:font-semibold placeholder:text-sm md:placeholder:text-lg outline-none p-2 md:p-3 bg-[#252526] pr-20"
-              type="text"
-              placeholder="// TODO: Enter email address"
+                className="w-full placeholder:text-gray-600 placeholder:font-semibold placeholder:text-sm md:placeholder:text-lg outline-none p-2 md:p-3 bg-[#252526] pr-20"
+                type="text"
+                placeholder="// TODO: Enter email address"
             />
             <button type="submit" className="absolute top-1 right-1 bg-blue-600 text-xs md:text-base p-2 rounded-md">
               Subscribe
@@ -71,7 +72,12 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <p className="text-white text-center text-xs md:text-md py-2">Made with ❤️ in India</p>
+        <div className="flex flex-col md:flex-row mt-2 md:mt-0 items-center justify-evenly">
+          <p className="text-center text-white text-xs">&copy; <span className="italic">BeOnSchool</span> is proudly
+            owned by <span
+                className="font-serif italic">Amarkanta Naorem</span></p>
+          <p className="text-white text-center text-xs md:text-md py-2">Made with ❤️ in India</p>
+        </div>
       </div>
     </div>
   );
