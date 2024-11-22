@@ -38,8 +38,8 @@ const Navbar = () => {
 
 
         {/* Navbar Menu List */}
-        <div className={`absolute md:static top-14 z-50 md:z-auto bg-gray-950 md:bg-transparent rounded-t-lg md:rounded-none flex w-[21rem] md:w-auto ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-          <ul className="flex flex-wrap md:flex-row items-center justify-around md:justify-between p-5 md:p-0">
+        <div className={`absolute md:static top-[4.4rem] z-50 md:z-auto bg-gray-950 md:bg-transparent rounded-t-lg md:rounded-none flex ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+          <ul className="flex flex-wrap md:flex-row items-center justify-around md:justify-between p-5 md:p-0 w-[24.5rem] md:w-[22rem] lg:w-auto">
             <li className="mb-5 md:mb-0 ">
               {/*Navbar Search Bar*/}
               <form className="relative">
