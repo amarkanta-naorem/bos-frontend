@@ -6,6 +6,7 @@ import Search from "../../assets/icons/search.svg";
 import DownArrow from "../../assets/icons/down-arrow.svg";
 import Logo from "../../assets/images/Logo.svg";
 import HamburgerMenu from "../../assets/icons/HamburgerMenu.svg";
+import CloseMenu from "../../assets/icons/CloseMenu.svg";
 
 const categories = [
   "Software Development",
@@ -27,19 +28,26 @@ const Navbar = () => {
           />
           <div className="block md:hidden">
             <button className="w-8 h-8" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              <img
+              {isMenuOpen ? (
+                  <img
+                      className="rotate-180"
+                      src={CloseMenu}
+                      alt="CloseMenu"
+                  />
+              ) : <img
                   className="rotate-180"
                   src={HamburgerMenu}
                   alt="HamburgerMenu"
-              />
+              />}
             </button>
           </div>
         </div>
 
 
         {/* Navbar Menu List */}
-        <div className={`absolute md:static top-16 z-50 md:z-auto bg-gray-950 md:bg-transparent rounded-t-lg md:rounded-none flex ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-          <ul className="flex flex-wrap md:flex-row items-center justify-around md:justify-between p-5 md:p-0 w-[23rem] md:w-[22rem] lg:w-auto">
+        <div
+            className={`absolute md:static top-16 z-50 md:z-auto bg-gray-950 md:bg-transparent rounded-t-lg md:rounded-none flex ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+          <ul className="flex flex-wrap md:flex-row items-center justify-around md:justify-between p-5 md:p-0 w-[23.1rem] md:w-[22rem] lg:w-auto">
             <li className="mb-5 md:mb-0 ">
               {/*Navbar Search Bar*/}
               <form className="relative">
